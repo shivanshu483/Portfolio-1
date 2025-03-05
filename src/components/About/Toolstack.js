@@ -1,5 +1,8 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { SiJupyter } from "react-icons/si";
+import { SiGooglecolab } from "react-icons/si";
+import { SiMicrosoftexcel } from "react-icons/si";
 import {
   SiVisualstudiocode,
   SiPostman,
@@ -12,20 +15,18 @@ function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
+      <SiJupyter />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+      <SiGooglecolab />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
+      <SiMicrosoftexcel />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
-      </Col>
+     
     </Row>
   );
 }
